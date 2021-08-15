@@ -1,0 +1,10 @@
+@import "./styles/base/fonts.scss";
+
+body {
+  margin: 0;
+  font-family: "Nunito";
+  font-weight: $font-regular;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+

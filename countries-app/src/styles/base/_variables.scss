@@ -1,0 +1,19 @@
+//colors :
+$white: hsl(0, 0%, 100%);
+$dark-grey: hsl(0, 0%, 52%);
+$light-grey: hsl(0, 0%, 98%);
+
+//Light Mode
+$bg-light: hsl(0, 0%, 98%);
+$element-bg-light: $white;
+$text-color-light: hsl(200, 15%, 8%);
+
+//Dark Mode
+$bg-dark: hsl(207, 26%, 17%);
+$element-bg-light: hsl(209, 23%, 22%);
+$text-color-dark: $white;
+
+//font weight
+$font-light: 300;
+$font-regular: 600;
+$font-bold: 800;
