@@ -1,8 +1,10 @@
 .countries-app {
   height: 100vh;
   background-color: $bg-light;
-
+  color: $text-color-light;
+  
   &.dark-mode {
     background-color: $bg-dark;
+    color: $text-color-dark;
   }
 }
