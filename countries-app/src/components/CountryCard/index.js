@@ -15,11 +15,11 @@ function CountryCard(props) {
           <span className="font--regular">Population:</span>
           <span className="font--light"> {population}</span>
         </div>
-        <div class="country-card__info">
+        <div className="country-card__info">
           <span className="font--regular">Region:</span>
           <span className="font--light"> {region}</span>
         </div>
-        <div class="country-card__info">
+        <div className="country-card__info">
           <span className="font--regular">Capital:</span>
           <span className="font--light"> {capital}</span>
         </div>
