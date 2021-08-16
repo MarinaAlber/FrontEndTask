@@ -1,0 +1,21 @@
+.countries-list {
+  font-size: 0.875rem;
+  padding: 0;
+  padding-top: 3rem;
+
+  &__header {
+    margin-bottom: 0.5rem;
+    margin-left: 0.125rem;
+    margin-right: 0.125rem;
+    justify-content: space-between;
+  }
+
+  &__filter {
+    text-align: end;
+  }
+
+  &__load-more {
+    text-align: center;
+    margin: 0.625rem 0;
+  }
+}
