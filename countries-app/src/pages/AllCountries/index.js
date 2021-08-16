@@ -158,7 +158,7 @@ class AllCountries extends React.Component {
               reset={!searchQuery}
             />
           </div>
-          <div className="countries-list__filter col-md-4 col-12">
+          <div className="countries-list__filter col-md-3 col-12">
             <Filter
               isDisabled={isLoading}
               onChangeHandler={(value) =>

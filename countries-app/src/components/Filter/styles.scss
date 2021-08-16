@@ -1,6 +1,7 @@
 .filter-select {
   border-radius: 0.25rem;
-  width: 100%;
+  width: 100% !important;
+  margin-top: 0.625rem;
   & .dropdown-toggle {
     border: none;
     font-size: 0.875rem;
