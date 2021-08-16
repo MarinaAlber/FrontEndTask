@@ -6,7 +6,7 @@ function Filter(props) {
   const { isDisabled, onChangeHandler } = props;
   const data = [
     { labelKey: "Africa", value: "Africa" },
-    { labelKey: "America", value: "America" },
+    { labelKey: "Americas", value: "Americas" },
     { labelKey: "Asia", value: "Asia" },
     { labelKey: "Europe", value: "Europe" },
     { labelKey: "Oceania", value: "Oceania" },

@@ -1,13 +1,16 @@
 .filter-select {
   border-radius: 0.25rem;
-
+  width: 100%;
   & .dropdown-toggle {
     border: none;
     font-size: 0.875rem;
     background-color: $element-bg-light;
-    color: $text-color-light;
+    color: $dark-grey;
+    .filter-option-inner-inner {
+      font-weight: 600;
+      color: $dark-grey;
+    }
   }
-  
   .dropdown-menu {
     background-color: $element-bg-light;
     border: none;
@@ -16,11 +19,12 @@
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.18);
     .dropdown-item {
       padding-top: 0.3125rem;
-      color: $text-color-light;
+      color: $dark-grey;
 
       &.active,
       &:active {
         background-color: $dark-grey;
+        color: $light-grey;
       }
     }
   }
@@ -30,23 +34,26 @@
   .filter-select {
     & .dropdown-toggle {
       background-color: $element-bg-dark;
-      color: $text-color-dark;
+      color: $light-grey;
+      .filter-option-inner-inner {
+        color: $light-grey;
+      }
     }
     .dropdown-menu {
       background-color: $element-bg-dark;
 
       .dropdown-item {
         padding-top: 0.3125rem;
-        color: $text-color-dark;
+        color: $light-grey;
 
         &.active,
         &:active {
           background-color: $light-grey;
-          color: $text-color-light;
+          color: $dark-grey;
         }
         &:hover,
         &:focus {
-          color: $text-color-light;
+          color: $dark-grey;
         }
       }
     }
