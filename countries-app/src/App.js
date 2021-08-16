@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/header";
 
 import "./App.scss";
+import AllCountries from "./pages/AllCountries";
 
 class App extends React.Component {
   state = {
@@ -18,18 +19,21 @@ class App extends React.Component {
 
   render() {
     const { isDarkTheme } = this.state;
-
     return (
       <Router>
         <div className={`countries-app ${isDarkTheme ? "dark-mode" : ""}`}>
-          <Header isDark = {isDarkTheme} toggleTheme={ this.toggleThemeHandler}/>
+          <Header isDark={isDarkTheme} toggleTheme={this.toggleThemeHandler} />
           <Switch>
             <Route exact path="/">
-              {() => "listing page"}
+              <AllCountries />
             </Route>
-            <Route path="/details">{() => "details"}</Route>
+            <Route exact path="/details/:name">
+              {() => <div className="alt-state">details</div>}
+            </Route>
 
-            <Route path="*">{() => "not found"}</Route>
+            <Route path="*">
+              {() => <div className="alt-state">not found</div>}
+            </Route>
           </Switch>
         </div>
       </Router>
