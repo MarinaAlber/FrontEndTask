@@ -1,0 +1,41 @@
+.font--regular {
+  font-weight: 600;
+}
+
+.font--bold {
+  font-weight: 800;
+}
+
+.font--light {
+  font-weight: 300;
+}
+
+.alt-state {
+  height: calc(100vh - 10rem);
+  text-align: center;
+  padding: 4rem;
+}
+
+.main-btn {
+  background-color: $element-bg-light;
+  color: $text-color-light;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+
+  &:hover,
+  &:focus {
+    background-color: $light-grey;
+  }
+}
+
+.dark-mode {
+  .main-btn {
+    background-color: $element-bg-dark;
+    color: $text-color-dark;
+    &:hover,
+    &:focus {
+      background-color: $dark-grey;
+    }
+  }
+}
