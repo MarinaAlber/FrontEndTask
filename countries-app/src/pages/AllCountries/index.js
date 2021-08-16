@@ -66,7 +66,7 @@ class AllCountries extends React.Component {
 
   filterByName = async (value) => {
     try {
-      const name = value || "all";
+      const name = value;
       const response = await getCountriesByName(name);
       this.setState({
         isLoading: false,
@@ -89,6 +89,10 @@ class AllCountries extends React.Component {
     this.setState(
       { isLoading: true, countries: [], currentLoadedItems: 0 },
       () => {
+        if(!value){
+          this.getCountries();
+          return;
+        }
         if (src === "filter") {
           this.filterByRegion(value);
         } else {
@@ -143,7 +147,7 @@ class AllCountries extends React.Component {
   };
 
   render() {
-    const { isLoading, searchQuery, countries, pageSize } = this.state;
+    const { isLoading, countries, pageSize } = this.state;
     const hasMore = countries.length > pageSize;
 
     return (
@@ -155,7 +159,6 @@ class AllCountries extends React.Component {
               onChangeHandler={(value) =>
                 this.handleDataChange(value, "search")
               }
-              reset={!searchQuery}
             />
           </div>
           <div className="countries-list__filter col-md-3 col-12">

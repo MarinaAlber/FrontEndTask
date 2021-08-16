@@ -18,11 +18,6 @@ class Search extends React.Component {
     });
   };
 
-  componentDidUpdate(prevProps, prevState){
-    if (prevProps.reset && prevState.value){
-      this.setValue("")
-    }
-  }
   onSubmitHandler = () => {
     this.props.onChangeHandler(this.state.value);
   };
