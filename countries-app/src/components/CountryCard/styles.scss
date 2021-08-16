@@ -1,0 +1,38 @@
+.country-card {
+  padding: 0;
+  margin: 0.875rem;
+  border: none;
+  border-radius: 0.25rem;
+
+  &__flag {
+    height: 150px;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    object-fit: cover;
+    vertical-align: text-top;
+  }
+
+  &__body {
+    padding: 1rem 1.875rem 2rem;
+  }
+
+  &__title {
+    color: inherit;
+    text-decoration: none;
+
+    p {
+      font-size: 1.125rem;
+      margin-bottom: 0.625rem;
+      margin-top: 0;
+    }
+  }
+  &__info:not(:last-child) {
+    margin-bottom: 0.3125rem;
+  }
+}
+
+.dark-mode {
+  .country-card {
+    background-color: $element-bg-dark;
+  }
+}
