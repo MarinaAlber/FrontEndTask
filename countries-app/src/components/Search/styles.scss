@@ -1,0 +1,38 @@
+.country-search {
+  position: relative;
+  font-size: 0.875rem;
+
+  color: $dark-grey;
+  &__icon {
+    position: absolute;
+    left: 1rem;
+    margin-right: 0.625rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__input {
+    padding-left: 3rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: $element-bg-light;
+    color: $dark-grey;
+    &::placeholder {
+      color: $dark-grey;
+    }
+  }
+}
+
+.dark-mode {
+  .country-search {
+    background-color: $element-bg-dark;
+    color: $light-grey;
+    &__input {
+      background-color: $element-bg-dark;
+      color: $light-grey;
+      &::placeholder {
+        color: $light-grey;
+      }
+    }
+  }
+}
