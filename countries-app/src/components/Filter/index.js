@@ -16,7 +16,7 @@ function Filter(props) {
       className="filter-select shadow-lg"
       disabled={isDisabled}
       options={data}
-      placeholder="Filter"
+      placeholder="Filter by Region"
       onChange={(e) =>
         e.selectedValue.length && onChangeHandler(e.selectedValue[0])
       }
