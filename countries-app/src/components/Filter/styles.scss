@@ -1,0 +1,54 @@
+.filter-select {
+  border-radius: 0.25rem;
+
+  & .dropdown-toggle {
+    border: none;
+    font-size: 0.875rem;
+    background-color: $element-bg-light;
+    color: $text-color-light;
+  }
+  
+  .dropdown-menu {
+    background-color: $element-bg-light;
+    border: none;
+    font-size: 0.875rem;
+    margin-top: 0.3125rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.18);
+    .dropdown-item {
+      padding-top: 0.3125rem;
+      color: $text-color-light;
+
+      &.active,
+      &:active {
+        background-color: $dark-grey;
+      }
+    }
+  }
+}
+
+.dark-mode {
+  .filter-select {
+    & .dropdown-toggle {
+      background-color: $element-bg-dark;
+      color: $text-color-dark;
+    }
+    .dropdown-menu {
+      background-color: $element-bg-dark;
+
+      .dropdown-item {
+        padding-top: 0.3125rem;
+        color: $text-color-dark;
+
+        &.active,
+        &:active {
+          background-color: $light-grey;
+          color: $text-color-light;
+        }
+        &:hover,
+        &:focus {
+          color: $text-color-light;
+        }
+      }
+    }
+  }
+}
