@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.594c5d4f.chunk.css",
+    "main.js": "/static/js/main.0d3f831e.chunk.js",
+    "main.js.map": "/static/js/main.0d3f831e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.cfb9c157.js",
+    "runtime-main.js.map": "/static/js/runtime-main.cfb9c157.js.map",
+    "static/css/2.a4454588.chunk.css": "/static/css/2.a4454588.chunk.css",
+    "static/js/2.251fa63c.chunk.js": "/static/js/2.251fa63c.chunk.js",
+    "static/js/2.251fa63c.chunk.js.map": "/static/js/2.251fa63c.chunk.js.map",
+    "static/js/3.bdd659e4.chunk.js": "/static/js/3.bdd659e4.chunk.js",
+    "static/js/3.bdd659e4.chunk.js.map": "/static/js/3.bdd659e4.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.a4454588.chunk.css.map": "/static/css/2.a4454588.chunk.css.map",
+    "static/css/main.594c5d4f.chunk.css.map": "/static/css/main.594c5d4f.chunk.css.map",
+    "static/js/2.251fa63c.chunk.js.LICENSE.txt": "/static/js/2.251fa63c.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/static/media/NunitoSans-SemiBold.662b8665.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cfb9c157.js",
+    "static/css/2.a4454588.chunk.css",
+    "static/js/2.251fa63c.chunk.js",
+    "static/css/main.594c5d4f.chunk.css",
+    "static/js/main.0d3f831e.chunk.js"
+  ]
+}
