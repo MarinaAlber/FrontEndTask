@@ -5,7 +5,7 @@ function CountryCard(props) {
   const { item } = props;
   const { flag, name, population, capital, region } = item;
   return (
-    <article className="country-card card shadow-sm ">
+    <article className="country-card card ">
       <img src={flag} className="card-img-top country-card__flag" alt={name} />
       <div className="country-card__body">
         <Link to={`details/${name}`}  className ="country-card__title font--bold">

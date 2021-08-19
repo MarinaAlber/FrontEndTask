@@ -3,6 +3,7 @@
   margin: 0.875rem;
   border: none;
   border-radius: 0.25rem;
+  box-shadow: $box-shadow-light;
 
   &__flag {
     height: 150px;
@@ -34,5 +35,6 @@
 .dark-mode {
   .country-card {
     background-color: $element-bg-dark;
+    box-shadow: $box-shadow-dark;
   }
 }

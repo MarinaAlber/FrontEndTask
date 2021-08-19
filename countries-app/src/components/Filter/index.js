@@ -13,7 +13,7 @@ function Filter(props) {
   ];
   return (
     <BootstrapSelect
-      className="filter-select shadow-lg"
+      className="filter-select"
       disabled={isDisabled}
       options={data}
       placeholder="Filter by Region"

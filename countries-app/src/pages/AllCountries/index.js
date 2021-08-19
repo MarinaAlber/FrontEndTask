@@ -170,11 +170,11 @@ class AllCountries extends React.Component {
             />
           </div>
         </div>
-        <div className="row g-lg-5 g-md-4 g-1">{this.renderBody()}</div>
+        <div className="row gx-lg-5 gx-md-4 gx-1 gy-3">{this.renderBody()}</div>
         {hasMore && (
-          <div className="row g-lg-5 g-md-4 g-1">
+          <div className="row gx-lg-5 gx-md-4 gx-1 gy-3">
             <div className="col-12 countries-list__load-more">
-              <button className="btn main-btn shadow-sm" onClick={this.loadMore}>
+              <button className="btn main-btn" onClick={this.loadMore}>
                 Load More
               </button>
             </div>

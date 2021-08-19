@@ -39,7 +39,7 @@ class Search extends React.Component {
           type="text"
           value={value}
           placeholder="Search for a country..."
-          className="form-control form-control-sm country-search__input shadow-lg"
+          className="form-control form-control-sm country-search__input "
           onChange={(e) => this.setValue(e.target.value)}
         ></input>
       </div>
