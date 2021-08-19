@@ -2,8 +2,8 @@
   border-radius: 0.25rem;
   width: 100% !important;
   margin-top: 0.625rem;
-  box-shadow: $box-shadow-light;
   & .dropdown-toggle {
+    box-shadow: $box-shadow-light;
     border: none;
     font-size: 0.875rem;
     background-color: $element-bg-light;
@@ -35,7 +35,9 @@
 
 .dark-mode {
   .filter-select {
+    
     & .dropdown-toggle {
+      box-shadow: $box-shadow-dark;
       box-shadow: $box-shadow-dark;
       background-color: $element-bg-dark;
       color: $light-grey;
