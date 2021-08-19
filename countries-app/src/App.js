@@ -5,6 +5,7 @@ import Header from "./components/header";
 
 import "./App.scss";
 import AllCountries from "./pages/AllCountries";
+import CountryDetails from "./pages/CountryDetails";
 
 class App extends React.Component {
   state = {
@@ -27,9 +28,11 @@ class App extends React.Component {
             <Route exact path="/">
               <AllCountries />
             </Route>
-            <Route exact path="/details/:name">
-              {() => <div className="alt-state">details</div>}
-            </Route>
+            <Route
+              exact
+              path="/details/:name"
+              render={(props) => <CountryDetails {...props} />}
+            />
 
             <Route path="*">
               {() => <div className="alt-state">not found</div>}
