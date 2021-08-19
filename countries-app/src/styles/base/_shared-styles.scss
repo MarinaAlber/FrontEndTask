@@ -22,7 +22,9 @@
   border: none;
   border-radius: 0.25rem;
   font-size: 0.875rem;
-
+  font-weight: 600;
+  padding: 0.25rem 1.25rem;
+  box-shadow: $box-shadow-light;
   &:hover,
   &:focus {
     background-color: $light-grey;
@@ -33,6 +35,8 @@
   .main-btn {
     background-color: $element-bg-dark;
     color: $text-color-dark;
+    box-shadow: $box-shadow-dark;
+
     &:hover,
     &:focus {
       background-color: $dark-grey;

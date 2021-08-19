@@ -7,11 +7,13 @@ $light-grey: hsl(0, 0%, 98%);
 $bg-light: hsl(0, 0%, 98%);
 $element-bg-light: $white;
 $text-color-light: hsl(200, 15%, 8%);
+$box-shadow-light: 0px 0px 6px 2px hsl(0, 0%, 89%);
 
 //Dark Mode
 $bg-dark: hsl(207, 26%, 17%);
 $element-bg-dark: hsl(209, 23%, 22%);
 $text-color-dark: $white;
+$box-shadow-dark: 0px 0px 9px 0px hsl(200deg ,15%, 8%);
 
 //font weight
 $font-light: 300;
