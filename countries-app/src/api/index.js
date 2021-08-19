@@ -14,11 +14,23 @@ export function getCountryDetails(countryName) {
 }
 
 export function getCountriesByName(countryName) {
-  const getCountriesApi = `${process.env.REACT_APP_API_GET_COUNTRIES_BY_NAME}${countryName}`;
-  return get(getCountriesApi);
+  const countriesApi = `${process.env.REACT_APP_API_GET_COUNTRIES_BY_NAME}${countryName}`;
+  return get(countriesApi);
 }
 
 export function getCountriesByRegion(region) {
-  const getCountriesApi = `${process.env.REACT_APP_API_GET_COUNTRIES_BY_REGION}${region}`;
-  return get(getCountriesApi);
+  const countriesApi = `${process.env.REACT_APP_API_GET_COUNTRIES_BY_REGION}${region}`;
+  return get(countriesApi);
+}
+
+export function getBorderCountries(borderCodes) {
+  const codes = borderCodes.join(";");
+  const bordersApi = `${process.env.REACT_APP_API_GET_COUNTRY_BORDERS}`;
+
+  return get(bordersApi, {
+    params: {
+      codes,
+      fields: "name;alpha3Code",
+    },
+  });
 }
